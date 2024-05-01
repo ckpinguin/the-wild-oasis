@@ -22,7 +22,7 @@ import Settings from "./pages/Settings"
 import Login from "./pages/Login"
 import PageNotFound from "./pages/PageNotFound"
 
-export const router = createBrowserRouter([
+const router = createBrowserRouter([
   { path: "login", element: <Login /> },
   { path: "*", element: <PageNotFound /> },
   {
