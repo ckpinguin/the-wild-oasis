@@ -24,7 +24,7 @@ export function useBookings() {
 
   const {
     isLoading,
-    data: { data: bookings, count } = {},
+    data: { data: bookings, count } = {}, // initial {} only necessary with nested objects
     error,
   } = useQuery({
     queryKey: ["bookings", filter, sortBy, page],
